@@ -12,7 +12,7 @@ or die(mysql_error());
 // Print out the contents of the entry 
 ////var_dump($row);
 while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
-    printf("User: %s  SkoolID: %s", $row[1], $row[2]);
+    printf("User: %s  SkoolID: %s", $row[0], $row[1]);
 }
 
 mysql_free_result($result);
