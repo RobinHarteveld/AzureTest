@@ -15,5 +15,6 @@ while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
     printf("User: %s  SkoolID: %s", $row[0], $row[1]);
 }
 
+
 mysql_free_result($result);
 ?>
